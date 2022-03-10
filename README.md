@@ -5,7 +5,7 @@
 ## 📄 Intro.
 
 This is a Simple User Manager App with React.js for practice from the course:
-React - Definitive guide: hooks router redux next +Projects, by Nicolas Schurmann <br><br>
+React - Definitive guide: hooks router redux next +Projects, by Nicolas Schurmann. <br><br>
 
 [![Demo Badge](https://img.shields.io/badge/Demo%20Link-informational?style=for-the-badge&color=ef233c&labelColor=2b2d42)](https://simple-user-manager.vercel.app/)
 
