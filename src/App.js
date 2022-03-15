@@ -1,32 +1,45 @@
 import { useState } from "react";
+import List from "./components/List";
 import Card from "./components/Card";
-import Container from "./components/Container";
 import UserForm from "./components/UserForm";
-function App() {
-  const [usuarios, setUsuarios] = useState([]);
+import Container from "./components/Container";
 
-  const submit = (usuario) => {
-    setUsuarios([...usuarios, usuario]);
+function App() {
+  const [users, setUsers] = useState([]);
+
+  const submit = (user) => {
+    setUsers([...users, user]);
   };
 
-  console.log(usuarios);
   return (
-    <div style={{ marginTop: "15%" }}>
+    <>
       <Container>
         <Card>
-          <div style={{ padding: 20 }}>
-            <UserForm submit={submit} />
-          </div>
+          <h1 className="font-sans font-bold sm:text-3xl text-xl text-center text-text">
+            User Manager App
+          </h1>
+
+          <UserForm submit={submit} />
         </Card>
+
         <Card>
+          <h2 className="font-sans font-bold sm:text-2xl text-xl text-text underline">
+            User Manager List:
+          </h2>
+
           <ul>
-            {usuarios.map((x) => (
-              <li key={x.email}>{`${x.name} ${x.lastname}: ${x.email}`}</li>
+            {users.map((x) => (
+              <List
+                key={`${x.email}`}
+                name={`${x.name}`}
+                lastname={`${x.lastname}`}
+                email={`${x.email}`}
+              />
             ))}
           </ul>
         </Card>
       </Container>
-    </div>
+    </>
   );
 }
 
