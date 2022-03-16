@@ -5,7 +5,7 @@
 ## 📄 Intro.
 
 <div align="center">
-Simple User Manager App in React.js and Tailwind CSS. From the course: React - Definitive guide: hooks router redux next +Projects, by Nicolas Schurmann. <br><br>
+Simple User Manager App in React.js and Tailwind CSS. <br><br>
 </div>
 
 [![User Manager App Banner](./assets/banner.png)](https://simple-user-manager.vercel.app/)
