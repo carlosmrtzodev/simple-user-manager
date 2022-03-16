@@ -3,6 +3,7 @@ import List from "./components/List";
 import Card from "./components/Card";
 import UserForm from "./components/UserForm";
 import Container from "./components/Container";
+import Info from "./components/Info";
 
 function App() {
   const [users, setUsers] = useState([]);
@@ -39,6 +40,7 @@ function App() {
           </ul>
         </Card>
       </Container>
+      <Info />
     </>
   );
 }
