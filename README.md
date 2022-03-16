@@ -8,7 +8,7 @@
 Simple User Manager App in React.js and Tailwind CSS. From the course: React - Definitive guide: hooks router redux next +Projects, by Nicolas Schurmann. <br><br>
 </div>
 
-[![Pomodoro App Banner](./assets/banner.png)](https://simple-user-manager.vercel.app/)
+[![User Manager App Banner](./assets/banner.png)](https://simple-user-manager.vercel.app/)
 
 ## 💼 Used technologies
 
