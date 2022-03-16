@@ -13,7 +13,7 @@ const Info = () => {
         <a
           href="https://github.com/carlosmrtzodev"
           target="_blank"
-          rel="noreferrer"
+          rel="noopener noreferrer"
           className="font-mono sm:text-lg text-sm text-text group-hover:text-btn transition-all ease-in-out duration-200"
         >
           Designed and Built by: carlosmrtzodev
