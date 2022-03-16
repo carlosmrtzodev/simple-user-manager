@@ -4,8 +4,11 @@
 
 ## 📄 Intro.
 
+<div align="center">
 Simple User Manager App in React.js and Tailwind CSS. From the course: React - Definitive guide: hooks router redux next +Projects, by Nicolas Schurmann. <br><br>
-[![Demo Badge](https://img.shields.io/badge/Demo%20Link-informational?style=for-the-badge&color=ef233c&labelColor=2b2d42)](https://simple-user-manager.vercel.app/)
+</div>
+
+[![Pomodoro App Banner](./assets/banner.png)](https://simple-user-manager.vercel.app/)
 
 ## 💼 Used technologies
 
