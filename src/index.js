@@ -1,6 +1,5 @@
 import "./index.css";
 import App from "./App";
-import React from "react";
 import NotFound from "./404";
 import ReactDOM from "react-dom";
 import { Routes, Route, BrowserRouter } from "react-router-dom";
