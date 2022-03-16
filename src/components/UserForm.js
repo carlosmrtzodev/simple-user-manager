@@ -1,6 +1,8 @@
 import Input from "./Input";
 import Button from "./Button";
 import useForm from "../hooks/useForm";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 const UserForm = ({ submit }) => {
   const [form, handleChange, reset] = useForm({
@@ -39,7 +41,9 @@ const UserForm = ({ submit }) => {
           onChange={handleChange}
         />
 
-        <Button>Submit</Button>
+        <Button>
+          Submit <FontAwesomeIcon icon={faArrowRight} />
+        </Button>
       </form>
     </>
   );

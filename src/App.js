@@ -1,9 +1,11 @@
 import { useState } from "react";
+import Info from "./components/Info";
 import List from "./components/List";
 import Card from "./components/Card";
 import UserForm from "./components/UserForm";
 import Container from "./components/Container";
-import Info from "./components/Info";
+import { faUser } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function App() {
   const [users, setUsers] = useState([]);
@@ -25,7 +27,8 @@ function App() {
 
         <Card>
           <h2 className="font-sans font-bold sm:text-2xl text-xl text-text underline">
-            User Manager List:
+            <FontAwesomeIcon icon={faUser} className="mr-2" /> User Manager
+            List:
           </h2>
 
           <ul>
