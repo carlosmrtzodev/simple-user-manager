@@ -13,7 +13,17 @@ module.exports = {
       btn: "#0096c7",
       hover: "#0077b6",
     },
-    extend: {},
+    extend: {
+      animation: {
+        fade: "fadeOut 1.5s ease-in-out",
+      },
+      keyframes: (theme) => ({
+        fadeOut: {
+          "0%": { opacity: 0 },
+          "100%": { opacity: 1 },
+        },
+      }),
+    },
   },
   plugins: [],
 };

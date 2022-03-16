@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const Info = () => {
   return (
     <>
-      <div className="lg:absolute static flex justify-center group items-center gap-2 bottom-4 left-4 lg:my-0 my-4">
+      <div className="lg:absolute static flex justify-center group items-center gap-2 bottom-4 left-4 lg:my-0 my-4 animate-fade">
         <FontAwesomeIcon
           icon={faGithub}
           className="sm:text-xl text-sm text-text group-hover:text-btn transition-all ease-in-out duration-200"
