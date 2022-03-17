@@ -1,11 +1,11 @@
 import { useState } from "react";
-import Info from "./components/Info";
-import List from "./components/List";
-import Card from "./components/Card";
-import UserForm from "./components/UserForm";
-import Container from "./components/Container";
-import { faUser } from "@fortawesome/free-solid-svg-icons";
+import Info from "./components/Elements/Info";
+import List from "./components/Elements/List";
+import Card from "./components/Containers/Card";
+import UserForm from "./components/Containers/UserForm";
+import Container from "./components/Containers/Container";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faList, faUser } from "@fortawesome/free-solid-svg-icons";
 
 function App() {
   const [users, setUsers] = useState([]);
@@ -18,32 +18,35 @@ function App() {
     <>
       <Container>
         <Card>
-          <h1 className="font-sans font-bold sm:text-3xl text-xl text-center text-text">
-            User Manager App
+          <h1>
+            <FontAwesomeIcon icon={faUser} className="mr-2 text-theme" />
+            User
           </h1>
 
           <UserForm submit={submit} />
         </Card>
 
-        <Card>
-          <h2 className="font-sans font-bold sm:text-2xl text-xl text-text underline">
-            <FontAwesomeIcon icon={faUser} className="mr-2" /> User Manager
-            List:
-          </h2>
+        <div className="flex flex-col w-full gap-4">
+          <Card>
+            <h2>
+              <FontAwesomeIcon icon={faList} className="mr-2 text-theme" />{" "}
+              List:
+            </h2>
 
-          <ul>
-            {users.map((x) => (
-              <List
-                key={`${x.email}`}
-                name={`${x.name}`}
-                lastname={`${x.lastname}`}
-                email={`${x.email}`}
-              />
-            ))}
-          </ul>
-        </Card>
+            <ul>
+              {users.map((x) => (
+                <List
+                  key={`${x.email}`}
+                  name={`${x.name}`}
+                  lastname={`${x.lastname}`}
+                  email={`${x.email}`}
+                />
+              ))}
+            </ul>
+          </Card>
+          <Info />
+        </div>
       </Container>
-      <Info />
     </>
   );
 }

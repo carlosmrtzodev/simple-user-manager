@@ -1,14 +1,14 @@
-import Card from "./components/Card";
-import Container from "./components/Container";
 import { Link } from "react-router-dom";
-import Button from "./components/Button";
+import Card from "./components/Containers/Card";
+import Button from "./components/Elements/Button";
+import Container from "./components/Containers/Container";
 
 const NotFound = () => {
   return (
     <>
       <Container>
         <Card>
-          <h1 className="font-sans font-bold sm:text-xl text-lg text-center text-text">
+          <h1 className="font-bold text-light text-center">
             404: This page could not be found
           </h1>
 

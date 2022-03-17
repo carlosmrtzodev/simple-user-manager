@@ -1,6 +1,6 @@
-import Input from "./Input";
-import Button from "./Button";
-import useForm from "../hooks/useForm";
+import Input from "../Elements/Input";
+import Button from "../Elements/Button";
+import useForm from "../../hooks/useForm";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
@@ -8,7 +8,6 @@ const UserForm = ({ submit }) => {
   const [form, handleChange, reset] = useForm({
     name: "",
     lastname: "",
-    email: "",
   });
 
   const handleSubmit = (e) => {
@@ -19,7 +18,7 @@ const UserForm = ({ submit }) => {
 
   return (
     <>
-      <form className="flex flex-col gap-2" onSubmit={handleSubmit}>
+      <form className="flex flex-col gap-4" onSubmit={handleSubmit}>
         <Input
           label="Name"
           name="name"
@@ -31,13 +30,6 @@ const UserForm = ({ submit }) => {
           label="Lastname"
           name="lastname"
           value={form.lastname}
-          onChange={handleChange}
-        />
-
-        <Input
-          label="E-mail"
-          name="email"
-          value={form.email}
           onChange={handleChange}
         />
 
