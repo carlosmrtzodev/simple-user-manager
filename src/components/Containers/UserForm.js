@@ -18,7 +18,7 @@ const UserForm = ({ submit }) => {
 
   return (
     <>
-      <form className="flex flex-col gap-4" onSubmit={handleSubmit}>
+      <form className="form" onSubmit={handleSubmit}>
         <Input
           label="Name"
           name="name"
@@ -40,5 +40,4 @@ const UserForm = ({ submit }) => {
     </>
   );
 };
-
 export default UserForm;

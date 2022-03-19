@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto+Mono:wght@400;500;700&display=swap");
+
+@layer base {
+  h1,
+  h2,
+  label {
+    @apply font-bold text-light;
+  }
+
+  body,
+  input {
+    @apply bg-light;
+  }
+
+  input,
+  button {
+    @apply text-small;
+  }
+
+  input {
+    @apply text-dark;
+  }
+
+  h1 {
+    @apply text-title;
+  }
+
+  h2 {
+    @apply text-subtitle;
+  }
+
+  li {
+    @apply text-light capitalize;
+  }
+
+  * {
+    @apply m-0 p-0 list-none no-underline box-border scroll-smooth font-lato;
+  }
+}
+
+@layer components {
+  .app,
+  .card,
+  .form,
+  .list,
+  .error {
+    @apply flex flex-col;
+  }
+
+  .form,
+  .list {
+    @apply gap-4;
+  }
+
+  .list,
+  .card,
+  .input {
+    @apply w-full;
+  }
+
+  .card,
+  .error {
+    @apply bg-dark p-8 gap-2 rounded-lg drop-shadow-2xl;
+  }
+
+  .btn,
+  .input {
+    @apply rounded-lg;
+  }
+
+  .icon,
+  .icon-alt {
+    @apply mr-2;
+  }
+
+  .app {
+    @apply md:flex-row justify-center items-center lg:w-2/3 w-3/4 min-h-screen mx-auto gap-8 md:py-0 py-12;
+  }
+
+  .icon {
+    @apply text-theme;
+  }
+
+  .label {
+    @apply block;
+  }
+
+  .input {
+    @apply outline-0 p-2;
+  }
+
+  .btn {
+    @apply text-light bg-theme hover:brightness-110 transition-all ease-in-out duration-200 px-8 py-2;
+  }
+}

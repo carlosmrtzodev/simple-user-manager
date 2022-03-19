@@ -2,15 +2,11 @@ const Input = ({ label, ...res }) => {
   return (
     <>
       <div>
-        <label className="block font-bold text-lg text-light">{label}</label>
+        <label className="label">{label}</label>
 
-        <input
-          {...res}
-          className="text-lg text-dark bg-light w-full rounded-lg outline-0 p-2"
-        />
+        <input {...res} className="input" />
       </div>
     </>
   );
 };
-
 export default Input;
