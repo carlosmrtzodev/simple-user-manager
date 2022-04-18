@@ -1,7 +1,7 @@
 ## 📄 Intro.
 
 <div align="center">
-Simple User Manager App in React.js with React Router and Tailwind CSS. <br><br>
+Simple User Manager App in React.js and Tailwind CSS. <br><br>
 </div>
 
 [![User Manager App Banner](./public/banner.png)](https://simple-user-manager.vercel.app/)
